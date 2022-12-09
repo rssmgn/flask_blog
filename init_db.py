@@ -9,11 +9,11 @@ with open('schema.sql') as f:
 cur = connection.cursor()
 
 cur.execute("INSERT INTO posts (title, content) VALUES (?, ?)",
-            ('First Post', 'Content for the first post')
+            ('Первая публикация', 'Содержимое первой публикации')
             )
 
 cur.execute("INSERT INTO posts (title, content) VALUES (?, ?)",
-            ('Second Post', 'Content for the second post')
+            ('Вторая публикация', 'Содержимое второй публикации')
             )
 
 connection.commit()

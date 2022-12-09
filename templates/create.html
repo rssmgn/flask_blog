@@ -7,13 +7,13 @@
     <div class="form-group">
         <label for="title">Title</label>
         <input type="text" name="title"
-               placeholder="Post title" class="form-control"
+               placeholder="Заголовок публикации" class="form-control"
                value="{{ request.form['title'] }}"></input>
     </div>
 
     <div class="form-group">
         <label for="content">Содержимое</label>
-        <textarea name="content" placeholder="Post content"
+        <textarea name="content" placeholder="Содержимое"
                   class="form-control">{{ request.form['content'] }}</textarea>
     </div>
     <div class="form-group">
